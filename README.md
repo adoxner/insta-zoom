@@ -5,7 +5,12 @@ Script to download the latest post image from an Instagram account and copy it t
 > Running this script will overwrite your current custom background in Zoom. Make sure to back it up first.
 
 ## How to use
-1. Install instaloader dependency: `pip3 install instaloader`
+1. Start up venv:
+  ```
+  python3 -m venv venv
+  source venv/bin/activate
+  pip3 install -r requirements.txt
+  ```
 2. Run the script with the Instagram handle as an argument: `python3 insta-zoom.py <instagram_handle>`
 
 ## Pitfalls

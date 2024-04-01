@@ -26,6 +26,8 @@ def copy_latest_post_to_path(username, new_path):
   posts = profile.get_posts()
   post = next(posts)  # Access the first element of the iterator
 
+  print(f"\tLatest post: {post.date_utc} UTC")
+
   # Download the image of the latest post
   print(f"(3/4) Downloading the image of the latest post of {username}...")
   folder_name = "tmp"
